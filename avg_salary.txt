@@ -1,0 +1,33 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.6.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop-2.7.4/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/opt/hive/conf/hive-log4j2.properties Async: true
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = root_20250304234608_99a425c4-a1c0-4061-95c0-5dd07dfc81cb
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2025-03-04 23:46:12,890 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_local1586172604_0001
+MapReduce Jobs Launched: 
+Stage-Stage-1:  HDFS Read: 117176 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Finance	93945.51874999996
+HR	92448.81040816318
+IT	93761.02570707069
+Marketing	93146.16827586209
+Operations	95352.16517241376
+__HIVE_DEFAULT_PARTITION__	NULL
+department	NULL
+Time taken: 4.578 seconds, Fetched: 7 row(s)
